@@ -16,8 +16,10 @@ class AuthRepository {
     };
 
     final body = {
-      'userNameOrEmailAddress': "asif",
-      'password': "password1",
+      //'userNameOrEmailAddress': "asif",
+      //'password': "password1",
+      'userNameOrEmailAddress':"$password",
+      'password': "$username",
     };
 
     final response = await http.post(url, headers: headers, body: jsonEncode(body));

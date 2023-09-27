@@ -30,7 +30,7 @@ class _LoginState extends State<Login> {
     String usernameValue;
     String passwordValue;
 
-    final loginCubit = BlocProvider.of<LoginCubit>(context);
+
 
     return Scaffold(
       backgroundColor: Color(0xffffffff),
@@ -47,7 +47,7 @@ class _LoginState extends State<Login> {
             // Show an error message to the user
           }
 
-            return SafeArea(
+          return  SafeArea(
             child: Padding(
 
               padding: const EdgeInsets.all(20.0),
@@ -129,7 +129,7 @@ class _LoginState extends State<Login> {
             ),
           );
           }
-        ),
+       ),
     );
   }
 }

@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 
 class LoginCubit extends Cubit<LoginState> {
-  final AuthRepository authRepository; // Declare the authRepository as a field
+  final AuthRepository authRepository;
 
   LoginCubit(this.authRepository) : super(InitState());
 
